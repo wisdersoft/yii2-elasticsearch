@@ -1,0 +1,39 @@
+{
+    "name": "wisdersoft/yii2-elasticsearch",
+    "description": "yii2 elasticsearch",
+    "keywords": ["yii2", "elasticsearch"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dickens Gao",
+            "email": "dickensgao@protonmail.ch"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.1",
+        "ext-curl": "*",
+        "yiisoft/yii2": "~2.0.14"
+    },
+    "require-dev": {
+        "elasticsearch/elasticsearch": "~7.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "wisder\\yii\\elasticsearch\\": "./"
+        }
+    },
+    "suggest": {
+        "elasticsearch/elasticsearch": "Provide elasticsearch client support"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    }
+}

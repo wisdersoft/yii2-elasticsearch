@@ -2,18 +2,14 @@
 
 namespace wisder\yii\elasticsearch\controllers;
 
-use Elasticsearch\Client;
-use yii\console\Controller;
 use yii\helpers\Console;
 
-class IndexController extends Controller
+class IndexController extends ElasticSearchController
 {
-    public $indices;
-
     /**
-     * @var Client
+     * @var array ElasticSearch index and their fields
      */
-    public $client;
+    public $indices;
 
     /**
      * Create ElasticSearch index
